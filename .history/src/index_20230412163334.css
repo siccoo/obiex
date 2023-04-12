@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: body {
+    margin: 0;
+    font-family:  Helvetica Neue, sans-serif;
+    height: 100vh;
+  }
+  
+  #root {
+    height: 100%;
+  };
+}
+
+#root {
+  height: 100%;
+}
