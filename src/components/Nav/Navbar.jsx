@@ -15,14 +15,14 @@ const Navbar = () => {
         </div>
 
         <form role="search">
-          <div class="search__bar">
+          <div className="search__bar">
             <img
               src={WebSearch}
               aria-label="search movie"
               tabindex="0"
               alt="Search Icon"
             />
-            <div class="search__input">
+            <div className="search__input">
               <img src={MobileSearch} alt="Search Icon" />
               <input
                 type="text"

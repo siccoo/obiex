@@ -2,31 +2,33 @@ import React from "react";
 import Navbar from "../components/Nav/Navbar";
 import Footer from "../components/Footer/Footer";
 
+import "./Home.css";
+
 const Home = () => {
   return (
-    <div>
+    <div className="hero">
       <Navbar />
       <section>
-        <div class="hero__section">
-          <p class="hero__section-info">
+        <div className="hero__section">
+          <p className="hero__section-info">
             <span>Featured</span> | 2019 | Action, Sci-Fi, Drama
           </p>
           <hgroup>
             <h1>Star Wars: The Rise of Skywalker</h1>
             <div>
-              <span class="rating">
+              <span className="rating">
                 <img src="@/assets/images/star.svg" alt="rating" />
                 9.0
               </span>
               <span>16+</span>
             </div>
           </hgroup>
-          <p class="hero__section__movie-info">
+          <p className="hero__section__movie-info">
             The revival of Emperor Palpatine resurrects the battle between the
             Resistance and the First Order while the Jedi's legendary conflict
             with the Sith Lord comes to a head.
           </p>
-          <div class="hero__section__movie-links">
+          <div className="hero__section__movie-links">
             <a href="/">
               <img src="@/assets/images/play-circle.svg" alt="" />
               <span>Watch now</span>

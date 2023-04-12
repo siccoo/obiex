@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Archivo:wght@400;600&display=swap");
+
+footer {
+  padding: 1.5rem 0;
+  background: #1d283c;
+  margin-top: auto;
+}
+
+footer p {
+  text-align: center;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #c3c5ca;
+}

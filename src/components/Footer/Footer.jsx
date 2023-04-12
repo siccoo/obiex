@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer>
+      <div className="footer__container">
+        <p>© 2023 Front-end assessment. Obiex</p>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
