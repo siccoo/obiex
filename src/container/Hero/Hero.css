@@ -78,15 +78,21 @@ hgroup div span:last-child {
   gap: 4px;
   padding: 12px 24px;
   text-decoration: none;
-  color: #fff;
   font-weight: 500;
   border-radius: 6px;
+  font-family: "Archivo";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
 }
+
 .hero__section__movie-links a:hover,
 .hero__section__movie-links a:focus,
 .hero__section__movie-links a:focus,
 .hero__section__movie-links a:focus-within {
-  outline: 2px solid #1759f2;
+  /* outline: 2px solid #1759f2; */
+  outline: none;
 }
 .hero__section__movie-links a:first-child {
   background-color: #3772ff;
