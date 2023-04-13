@@ -12,7 +12,6 @@ body {
   color: #fff;
   background: #1B1F32;
   transition: all 0.5s;
-  font-family: 'Archivo', sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

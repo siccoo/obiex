@@ -1,6 +1,10 @@
 import React from 'react';
 import "./Hero.css";
 
+import Star from "../../assets/svg/star.svg";
+import Play from "../../assets/png/play-circle.png";
+import InfoCircle from "../../assets/png/info-circle.png"
+
 const Hero = () => {
   return (
     <section>
@@ -12,7 +16,7 @@ const Hero = () => {
             <h1>Star Wars: The Rise of Skywalker</h1>
             <div>
               <span className="rating">
-                <img src="@/assets/images/star.svg" alt="rating" />
+                <img src={Star} alt="star" />
                 9.0
               </span>
               <span>16+</span>
@@ -25,11 +29,11 @@ const Hero = () => {
           </p>
           <div className="hero__section__movie-links">
             <a href="/">
-              <img src="" alt="" />
+              <img src={Play} alt="play-circle" />
               <span>Watch now</span>
             </a>
             <a href="/">
-              <img src="" alt="" />
+              <img src={InfoCircle} alt="info-circle" />
               <span>Learn more</span>
             </a>
           </div>

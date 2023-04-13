@@ -1,20 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Archivo:wght@400;600&display=swap");
+
 section > * {
   padding: 5em 1rem;
-  z-index:100
-
+  z-index: 100;
 }
 .hero__section {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  background: url("../../assets/png/backgroundImg.png") no-repeat center center;
-  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.7);
+  background: linear-gradient(
+      90deg,
+      rgba(27, 31, 50, 0.4) 41.56%,
+      rgba(27, 31, 50, 0) 97.11%
+    ),
+    url("../../assets/png/backgroundImg.png") no-repeat center center;
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.7);
   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover; 
-   background-size: cover;
-   position: relative;
-   padding: 100px;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding: 100px;
 }
 
 .hero__section-info {
@@ -24,9 +30,14 @@ section > * {
   color: #e8ba35;
 }
 hgroup h1 {
-  font-size: 30px;
-  margin-bottom: 0.7em;
+  margin-bottom: 10px;
   line-height: 1.5em;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 44px;
+  color: #fdfdfd;
 }
 hgroup div {
   display: flex;
@@ -46,16 +57,22 @@ hgroup div span:last-child {
 .rating img {
   width: 22px;
 }
-.hero__section--movie-info {
-  width: 80%;
+.hero__section__movie-info {
+  max-width: 560px;
   line-height: 1.6em;
   word-spacing: 1px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fdfdfd;
 }
-.hero__section--movie-links {
+.hero__section__movie-links {
   display: flex;
   gap: 10px;
 }
-.hero__section--movie-links a {
+.hero__section__movie-links a {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -65,24 +82,24 @@ hgroup div span:last-child {
   font-weight: 500;
   border-radius: 6px;
 }
-.hero__section--movie-links a:hover,
-.hero__section--movie-links a:focus,
-.hero__section--movie-links a:focus,
-.hero__section--movie-links a:focus-within {
+.hero__section__movie-links a:hover,
+.hero__section__movie-links a:focus,
+.hero__section__movie-links a:focus,
+.hero__section__movie-links a:focus-within {
   outline: 2px solid #1759f2;
 }
-.hero__section--movie-links a:first-child {
+.hero__section__movie-links a:first-child {
   background-color: #3772ff;
 }
-.hero__section--movie-links a:last-child {
+.hero__section__movie-links a:last-child {
   border: 1px solid #98b6ff;
   background-color: #21354a;
 }
 
 @media screen and (max-width: 1024px) {
-.hero__section {
-  padding: 20px
-}
+  .hero__section {
+    padding: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -93,7 +110,7 @@ hgroup div span:last-child {
     font-size: 40px;
   }
   hgroup h1,
-  .hero__section--movie-info {
+  .hero__section__movie-info {
     max-width: 60%;
   }
 }
@@ -102,7 +119,7 @@ hgroup div span:last-child {
     padding: 0;
   }
   hgroup h1,
-  .hero__section--movie-info {
+  .hero__section__movie-info {
     max-width: 45%;
   }
 }

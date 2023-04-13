@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 import LeftArrow from "../../assets/svg/arrow-left.svg";
 import RightArrow from "../../assets/svg/arrow-right.svg";
+import MovieCard from "../MovieCard/MovieCard";
 
 const Home = () => {
   return (
@@ -24,7 +25,9 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="main__movie--card">{/* <MovieCard /> */}</div>
+        <div className="main__movie--card">
+          <MovieCard />
+        </div>
       </div>
       <Footer />
     </div>
