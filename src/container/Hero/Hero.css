@@ -1,11 +1,22 @@
-section {
+section > * {
   padding: 5em 1rem;
+  z-index:100
+
 }
 .hero__section {
   display: flex;
   flex-direction: column;
   gap: 2em;
+  background: url("../../assets/png/backgroundImg.png") no-repeat center center;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.7);
+  -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover; 
+   background-size: cover;
+   position: relative;
+   padding: 100px;
 }
+
 .hero__section-info {
   font-size: 13px;
 }
@@ -67,9 +78,16 @@ hgroup div span:last-child {
   border: 1px solid #98b6ff;
   background-color: #21354a;
 }
+
+@media screen and (max-width: 1024px) {
+.hero__section {
+  padding: 20px
+}
+}
+
 @media screen and (min-width: 1024px) {
   section {
-    padding: 8em 6%;
+    padding: 0;
   }
   hgroup h1 {
     font-size: 40px;
@@ -81,7 +99,7 @@ hgroup div span:last-child {
 }
 @media screen and (min-width: 1440px) {
   section {
-    padding: 5em 8%;
+    padding: 0;
   }
   hgroup h1,
   .hero__section--movie-info {
