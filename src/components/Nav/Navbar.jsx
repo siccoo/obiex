@@ -1,9 +1,9 @@
 import React from "react";
 import "./Navbar.css";
 
-import HomeLogo from "../../assets/obiexLogo.png";
-import WebSearch from "../../assets/webSearch.svg";
-import MobileSearch from "../../assets/mobileSearch.png"
+import HomeLogo from "../../assets/png/obiexLogo.png";
+import WebSearch from "../../assets/svg/webSearch.svg";
+import MobileSearch from "../../assets/png/mobileSearch.png"
 
 const Navbar = () => {
 
