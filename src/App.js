@@ -1,6 +1,5 @@
 import './App.css';
 import Home from './container/Home/Home';
-import makeAPICall from './utils/apiUtils';
 
 function App() {
   // const url =
