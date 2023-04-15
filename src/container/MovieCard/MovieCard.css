@@ -1,9 +1,10 @@
 .movie__cards {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   cursor: pointer;
-  width: 240px;
+  width: 200px;
   margin-bottom: 24px;
+  margin-right: 24px;
 }
 
 @media (min-width: 576px) {
@@ -47,11 +48,7 @@
 }
 
 .movie--info {
-  padding: 12px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  /* display: flex; */
 }
 .movie--info h3 {
   font-size: 18px;

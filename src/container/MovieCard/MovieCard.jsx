@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import "./MovieCard.css";
 
 import makeAPICall from "../../utils/apiUtils";
@@ -24,9 +26,13 @@ const MovieCard = () => {
     seeMovies();
   }, []);
 
-  const handleMovie = () => {
+  const handleMovie = () => {};
 
-  }
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+  };
 
   return (
     <>
@@ -34,20 +40,32 @@ const MovieCard = () => {
         "No movie"
       ) : (
         <>
-          {state?.results?.map((item) => (
-            <div className="movie__cards" onClick={handleMovie}>
-              <div className="movie--img">
-                <img src={`https://api.themoviedb.org${item.poster_path}`} alt="" />
+          <AliceCarousel
+            mouseTracking
+            items={state}
+            responsive={responsive}
+            disableDotsControls={true}
+            disableButtonsControls={true}
+            controlsStrategy="alternate"
+          >
+            {state?.results?.map((item) => (
+              <div className="movie__cards" onClick={handleMovie}>
+                <div className="movie--img">
+                  <img
+                    src={`https://api.themoviedb.org${item.poster_path}`}
+                    alt=""
+                  />
+                </div>
+                <div className="movie--info">
+                  <h3>{item.title}</h3>
+                  <p>
+                    <span>{item.release_date}</span> |{" "}
+                    <span>{item.vote_average}</span>
+                  </p>
+                </div>
               </div>
-              <div className="movie--info">
-                <h3>{item.title}</h3>
-                <p>
-                  <span>{item.release_date}</span> |{" "}
-                  <span>{item.vote_average}</span>
-                </p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </AliceCarousel>
         </>
       )}
     </>
