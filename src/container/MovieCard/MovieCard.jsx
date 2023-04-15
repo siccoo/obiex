@@ -24,6 +24,10 @@ const MovieCard = () => {
     seeMovies();
   }, []);
 
+  const handleMovie = () => {
+
+  }
+
   return (
     <>
       {state.length === 0 ? (
@@ -31,7 +35,7 @@ const MovieCard = () => {
       ) : (
         <>
           {state?.results?.map((item) => (
-            <div className="movie__cards">
+            <div className="movie__cards" onClick={handleMovie}>
               <div className="movie--img">
                 <img src={`https://api.themoviedb.org${item.poster_path}`} alt="" />
               </div>
