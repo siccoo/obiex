@@ -25,8 +25,10 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="main__movie--card">
-          <MovieCard />
+        <div className="main__movie--card ">
+          <div className="row">
+            <MovieCard />
+          </div>
         </div>
       </div>
       <Footer />
